@@ -207,7 +207,7 @@ var CalendarDate = _react2['default'].createClass({
       highlightModifier = 'single';
     }
 
-    if (numStates === 1) {
+    if (this.props.fullDayStates || numStates === 1) {
       // If there's only one state, it means we're not at a boundary
       color = states.getIn([0, 'color']);
 
@@ -242,7 +242,7 @@ var CalendarDate = _react2['default'].createClass({
         onMouseEnter: this.mouseEnter,
         onMouseLeave: this.mouseLeave,
         onMouseDown: this.mouseDown },
-      numStates > 1 && _react2['default'].createElement(
+      numStates > 1 && !this.props.fullDayStates && _react2['default'].createElement(
         'div',
         { className: this.cx({ element: "HalfDateStates" }) },
         _react2['default'].createElement(_CalendarDatePeriod2['default'], { period: 'am', color: amColor }),
