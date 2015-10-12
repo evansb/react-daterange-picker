@@ -2,7 +2,7 @@ import React from 'react';
 
 import BemMixin from './utils/BemMixin';
 
-const PureRenderMixin = React.addons.PureRenderMixin;
+import PureRenderMixin from 'react-addons-pure-render-mixin';
 
 
 const PaginationArrow = React.createClass({

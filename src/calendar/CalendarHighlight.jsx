@@ -1,7 +1,7 @@
 import React from 'react';
 
 import BemMixin from '../utils/BemMixin';
-import PureRenderMixin from '../utils/PureRenderMixin';
+import PureRenderMixin from 'react-addons-pure-render-mixin';
 
 
 const CalendarHighlight = React.createClass({

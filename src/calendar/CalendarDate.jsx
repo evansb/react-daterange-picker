@@ -4,7 +4,7 @@ import Immutable from 'immutable';
 
 import BemMixin from '../utils/BemMixin';
 import CustomPropTypes from '../utils/CustomPropTypes';
-import PureRenderMixin from '../utils/PureRenderMixin';
+import PureRenderMixin from 'react-addons-pure-render-mixin';
 import lightenDarkenColor from '../utils/lightenDarkenColor';
 
 import CalendarDatePeriod from './CalendarDatePeriod';
