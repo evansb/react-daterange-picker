@@ -1,9 +1,6 @@
-import React from 'react/addons';
-
+import React from 'react';
+import PureRenderMixin from 'react-addons-pure-render-mixin';
 import BemMixin from './utils/BemMixin';
-
-const PureRenderMixin = React.addons.PureRenderMixin;
-
 
 const Legend = React.createClass({
   mixins: [BemMixin, PureRenderMixin],
